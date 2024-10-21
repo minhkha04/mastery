@@ -308,7 +308,7 @@ footer .line {
 
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 576px) {
     .container {
         margin: 0px 20px;
     }
