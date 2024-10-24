@@ -1,11 +1,11 @@
-const btnSub = document.getElementById("add");
-const open1 = document.getElementById("open1");
-const list = document.querySelectorAll('#move');
-function toggleMenu() {
-    open1.classList.toggle('open');
-}   
 
-btnSub.addEventListener('click', toggleMenu);
+const list = document.querySelectorAll('#close_open');
+const open1 = document.getElementById("open1");
+console.log(list);
+function toggleMenu(e) {
+    e.stopPropagation();
+    open1.classList.toggle('open');
+}           
 for(let e of list) {
     e.addEventListener('click', toggleMenu);
 }
