@@ -19,6 +19,14 @@
 
 header {
     padding: 20px 0px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 3;
+}
+
+.header_container  .mobile {
+    display: none;
 }
 
 .brand {
@@ -41,12 +49,12 @@ header ul {
     list-style: none;
     margin-top: 10px;
 }
-
 header ul li a {
     text-decoration: none;
     color: black;
     margin: 0px 30px 0px 20px;
     font-size: 30px;
+    padding: 10px;
 }
 
 .banner {
@@ -281,6 +289,11 @@ footer .line {
     width: 100%;
 }
 
+header ul li:hover a {
+    color: var(--second-color);
+    background-color: gray;
+}
+
 @media screen and (max-width: 1024px) {
     .container {
         margin: 0px 30px;
@@ -312,7 +325,33 @@ footer .line {
     .container {
         margin: 0px 20px;
     }
-
+    .header_container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .header_container .brand {
+        width: 50%;
+    }
+    .header_container  .mobile {
+        display: block;
+        font-size: 30px;
+        line-height: 47px;
+        width: 50px;
+    }
+    .header_container nav {
+        display: none;
+        width: 100vw;
+    }
+    header ul li a {
+        padding: 0px;
+    }
+    header ul {
+        display: flex;
+        flex-flow: column;
+    }
     .welcome .desrip_wellecome {
         width: 100%;
         margin-right: 0px;
@@ -354,5 +393,9 @@ footer .line {
         width: 100%;
         margin-bottom: 20px;
     }
-
+    .header_container .open {
+        display: block;
+    }
 }
+
+
