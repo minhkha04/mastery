@@ -398,4 +398,6 @@ header ul li:hover a {
         display: block;
     }
 }
-
+#close{
+    border: 1px red solid;
+}
